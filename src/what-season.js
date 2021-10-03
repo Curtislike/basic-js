@@ -21,16 +21,24 @@ export default function getSeason(date) {
   let month = date.getMonth();
   let currentSeason;
   switch (month) {
-    case (11, 0, 1):
+    case 11:
+    case 0:
+    case 1:
       currentSeason = "winter";
       break;
-    case (2, 3, 4):
+    case 2:
+    case 3:
+    case 4:
       currentSeason = "spring";
       break;
-    case (5, 6, 7):
+    case 5:
+    case 6:
+    case 7:
       currentSeason = "summer";
       break;
-    case (8, 9, 10):
+    case 8:
+    case 9:
+    case 10:
       currentSeason = "autumn";
       break;
   }
